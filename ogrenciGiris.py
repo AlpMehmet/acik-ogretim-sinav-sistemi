@@ -1,0 +1,140 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ogrenciGiris.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+import sqlite3
+from testt import Ui_Test
+
+class Ui_og(object):
+    def setupUi(self, og):
+        og.setObjectName("og")
+        og.resize(450, 285)
+        self.centralwidget = QtWidgets.QWidget(og)
+        self.centralwidget.setObjectName("centralwidget")
+        self.groupBoxKabulMu_2 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBoxKabulMu_2.setEnabled(True)
+        self.groupBoxKabulMu_2.setGeometry(QtCore.QRect(10, 10, 421, 211))
+        self.groupBoxKabulMu_2.setTitle("")
+        self.groupBoxKabulMu_2.setObjectName("groupBoxKabulMu_2")
+        self.verticalLayoutWidget_4 = QtWidgets.QWidget(self.groupBoxKabulMu_2)
+        self.verticalLayoutWidget_4.setGeometry(QtCore.QRect(20, 30, 376, 161))
+        self.verticalLayoutWidget_4.setObjectName("verticalLayoutWidget_4")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_4)
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.label_4 = QtWidgets.QLabel(self.verticalLayoutWidget_4)
+        self.label_4.setObjectName("label_4")
+        self.verticalLayout_4.addWidget(self.label_4)
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.label_5 = QtWidgets.QLabel(self.verticalLayoutWidget_4)
+        self.label_5.setObjectName("label_5")
+        self.horizontalLayout_3.addWidget(self.label_5)
+        self.lineEditOAd = QtWidgets.QLineEdit(self.verticalLayoutWidget_4)
+        self.lineEditOAd.setObjectName("lineEditOAd")
+        self.horizontalLayout_3.addWidget(self.lineEditOAd)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_3)
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.label_6 = QtWidgets.QLabel(self.verticalLayoutWidget_4)
+        self.label_6.setObjectName("label_6")
+        self.horizontalLayout_4.addWidget(self.label_6)
+        self.lineEditOSifre = QtWidgets.QLineEdit(self.verticalLayoutWidget_4)
+        self.lineEditOSifre.setObjectName("lineEditOSifre")
+        self.horizontalLayout_4.addWidget(self.lineEditOSifre)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+        self.pushButtonOGiris = QtWidgets.QPushButton(self.verticalLayoutWidget_4)
+        self.pushButtonOGiris.setObjectName("pushButtonOGiris")
+        self.verticalLayout_4.addWidget(self.pushButtonOGiris)
+        self.groupBoxKabulMu_3 = QtWidgets.QGroupBox(self.groupBoxKabulMu_2)
+        self.groupBoxKabulMu_3.setEnabled(True)
+        self.groupBoxKabulMu_3.setGeometry(QtCore.QRect(410, 70, 421, 211))
+        self.groupBoxKabulMu_3.setTitle("")
+        self.groupBoxKabulMu_3.setObjectName("groupBoxKabulMu_3")
+        self.verticalLayoutWidget_5 = QtWidgets.QWidget(self.groupBoxKabulMu_3)
+        self.verticalLayoutWidget_5.setGeometry(QtCore.QRect(20, 30, 376, 161))
+        self.verticalLayoutWidget_5.setObjectName("verticalLayoutWidget_5")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_5)
+        self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.label_7 = QtWidgets.QLabel(self.verticalLayoutWidget_5)
+        self.label_7.setObjectName("label_7")
+        self.verticalLayout_5.addWidget(self.label_7)
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.label_8 = QtWidgets.QLabel(self.verticalLayoutWidget_5)
+        self.label_8.setObjectName("label_8")
+        self.horizontalLayout_5.addWidget(self.label_8)
+        self.lineEditOAd_2 = QtWidgets.QLineEdit(self.verticalLayoutWidget_5)
+        self.lineEditOAd_2.setObjectName("lineEditOAd_2")
+        self.horizontalLayout_5.addWidget(self.lineEditOAd_2)
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.label_9 = QtWidgets.QLabel(self.verticalLayoutWidget_5)
+        self.label_9.setObjectName("label_9")
+        self.horizontalLayout_6.addWidget(self.label_9)
+        self.lineEditOSifre_2 = QtWidgets.QLineEdit(self.verticalLayoutWidget_5)
+        self.lineEditOSifre_2.setObjectName("lineEditOSifre_2")
+        self.horizontalLayout_6.addWidget(self.lineEditOSifre_2)
+        self.verticalLayout_5.addLayout(self.horizontalLayout_6)
+        self.pushButtonOGiris_2 = QtWidgets.QPushButton(self.verticalLayoutWidget_5)
+        self.pushButtonOGiris_2.setObjectName("pushButtonOGiris_2")
+        self.verticalLayout_5.addWidget(self.pushButtonOGiris_2)
+        og.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(og)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 450, 23))
+        self.menubar.setObjectName("menubar")
+        og.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(og)
+        self.statusbar.setObjectName("statusbar")
+        og.setStatusBar(self.statusbar)
+       
+        self.pushButtonOGiris.clicked.connect(self.giris)
+
+        self.retranslateUi(og)
+        QtCore.QMetaObject.connectSlotsByName(og)
+    def giris(self):
+        ad=self.lineEditOAd.text()
+        no=self.lineEditOSifre.text()
+        vt = sqlite3.connect('ogrenci.db')
+        im = vt.cursor()
+        im.execute("""SELECT * FROM ogrenci""")        
+        for veri in im:
+            if(str(veri[2])==str(ad) and str(veri[1])==str(no)):                   
+                self.openWindow()
+                im2=vt.cursor()
+                im2.execute("""INSERT INTO girisYapan (ogId) values (?)""",(veri[0]))
+        vt.close()
+    def openWindow(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_Test()
+        self.ui.setupUi(self.window)
+        self.window.show()   
+    def retranslateUi(self, og):
+        _translate = QtCore.QCoreApplication.translate
+        og.setWindowTitle(_translate("og", "og"))
+        self.label_4.setText(_translate("og", "Öğrenci Girişi Yapmaktasınız"))
+        self.label_5.setText(_translate("og", "İsim    "))
+        self.label_6.setText(_translate("og", "No:    "))
+        self.pushButtonOGiris.setText(_translate("og", "Giris"))
+        self.label_7.setText(_translate("og", "Öğretmen Girişi Yapmaktasınız"))
+        self.label_8.setText(_translate("og", "Mail Adresiniz: "))
+        self.label_9.setText(_translate("og", "Şifreniz:         "))
+        self.pushButtonOGiris_2.setText(_translate("og", "Giris"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    og = QtWidgets.Qog()
+    ui = Ui_og()
+    ui.setupUi(og)
+    og.show()
+    sys.exit(app.exec_())
+
