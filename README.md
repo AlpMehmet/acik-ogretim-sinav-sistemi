@@ -1,2 +1,2 @@
 # acik-ogretim-sinav-sistemi
-Python ile basit düzeyde açık öğretim sınav sistemi. 
+Python ile basit düzeyde açık öğretim sınav sistemi sqllite ile. 
